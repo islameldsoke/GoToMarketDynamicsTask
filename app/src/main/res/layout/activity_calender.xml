@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.islam.gotomarketdynamicstask.CalenderActivity">
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint=" Event Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Event description"
+        app:layout_constraintEnd_toEndOf="@+id/title_et"
+        app:layout_constraintStart_toStartOf="@+id/title_et"
+        app:layout_constraintTop_toBottomOf="@+id/title_et" />
+
+    <EditText
+        android:id="@+id/location_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="Event Location"
+        app:layout_constraintEnd_toEndOf="@+id/description_et"
+        app:layout_constraintStart_toStartOf="@+id/description_et"
+        app:layout_constraintTop_toBottomOf="@+id/description_et" />
+
+    <Button
+        android:id="@+id/addEvent_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Add Event"
+        app:layout_constraintEnd_toEndOf="@+id/location_et"
+        app:layout_constraintStart_toStartOf="@+id/location_et"
+        app:layout_constraintTop_toBottomOf="@+id/location_et" />
+
+</android.support.constraint.ConstraintLayout>
